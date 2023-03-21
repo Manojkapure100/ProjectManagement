@@ -31,7 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-
-### propertly is diffrence ###
-!**/src/main/resources
