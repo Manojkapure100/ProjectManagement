@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.springDataJpa.springBoot.entityOrModelOrDomain.Investor;
 
-public interface investorRepo extends JpaRepository<Investor,Integer> {
+public interface InvestorRepo extends JpaRepository<Investor,Integer> {
 
 }

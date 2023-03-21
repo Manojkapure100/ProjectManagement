@@ -4,17 +4,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import com.springDataJpa.springBoot.repositoryOrInterface.investorProjectRepo;
-import com.springDataJpa.springBoot.repositoryOrInterface.investorRepo;
-import com.springDataJpa.springBoot.repositoryOrInterface.projectRepo;
+import com.springDataJpa.springBoot.repositoryOrInterface.InvestorProjectRepo;
+import com.springDataJpa.springBoot.repositoryOrInterface.InvestorRepo;
+import com.springDataJpa.springBoot.repositoryOrInterface.ProjectRepo;
 
 @RestController
-public class Controller1 {
+public class InvestorProjectController {
 
   @Autowired
-  private investorProjectRepo investorProjectRepo;
-  private investorRepo investorRepo;
-  private projectRepo projectRepo;
+  private InvestorProjectRepo investorProjectRepo;
 
   @GetMapping(value="/")
   public String root() {
