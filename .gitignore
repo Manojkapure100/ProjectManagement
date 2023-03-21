@@ -34,4 +34,4 @@ build/
 
 
 ### propertly is diffrence ###
-/src/main/resources/
+!**/src/main/resources
