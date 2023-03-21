@@ -18,7 +18,7 @@ import com.springDataJpa.springBoot.repositoryOrInterface.projectRepo;
 
 
 @RestController
-public class cntr1 {
+public class Controller1 {
 
   @Autowired
   // private productRepository productRepository;
