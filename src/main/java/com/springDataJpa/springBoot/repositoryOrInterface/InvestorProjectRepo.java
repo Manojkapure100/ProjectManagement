@@ -16,4 +16,8 @@ public interface InvestorProjectRepo extends JpaRepository<Investor_project,Inte
   @Query(value = "select distinct project_id from investor_project where investor_id = :id", nativeQuery = true)
   List<Integer> findProjectIdByInvestorId(@Param("id") int id);
 
+// @Query(value = "select project.project_id, investor_project.invested_share from investor_project inner join project on project.project_id=investor_project.project_id",nativeQuery = true)
+//  List<Investor_project> findInvestedMoneyByProjectId(@Param("id") int id);
+ @Query(value = "select distinct project_id from investor_project where investor_id = 1 ",nativeQuery = true)
+ List<Integer> findAllProjects();
 }

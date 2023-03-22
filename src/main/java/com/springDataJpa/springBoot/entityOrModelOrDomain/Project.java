@@ -1,6 +1,7 @@
 package com.springDataJpa.springBoot.entityOrModelOrDomain;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -22,10 +23,10 @@ public class Project {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int ProjectId;
-  private int ProgressStatus;
+  private int progressStatus;
   private String projectName;
-  private LocalDateTime projectStartingDate;
-  private LocalDateTime projectDeadLine;
+  private Date projectStartingDate;
+  private Date projectDeadLine;
   private String projectTypeName;
   private int locationId;
   private int userId;
